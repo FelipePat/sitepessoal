@@ -1,0 +1,10 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    background-color: #004f9e;
+    padding: 1rem;
