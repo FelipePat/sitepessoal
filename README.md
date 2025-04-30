@@ -1,4 +1,4 @@
-Desinvolvimento para o meu portifolio.
+Desenvolvimento para o meu portifolio.
 
 Site pessoal 
 
