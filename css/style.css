@@ -1,10 +1,320 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+
+/*container principal*/
+.menu { 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+}
+/* lista dos itens*/
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+}
+/*itens individuais*/
+.menu li {
+    margin: 0 1.2rem;
+    position: relative;
+}
+/*texto clicaveis*/
+.menu a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    display: block; 
+}
+/*efeito hover*/
+.menu a:hover {
+        color: #0a66c2;
+        }
+/*item selecionado*/ 
+.menu a.active {
+    color: #0a66c2;
+    font-weight: 600;
 }
 
-.main-nav {
-    background-color: #004f9e;
-    padding: 1rem;
+.menu li:hover::after {
+    width: 100%;
+
+}
+/* container perfil*/
+.profile-card{
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.profile-card:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+    
+/* organizar foto*/
+.profile-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+/*controlocar espaço foto*/
+.profile-photo-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    min-width: 130px;
+    border-radius: 50%;   
+}
+/*foto de perfil*/
+.profile-photo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #0a66c6;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*hover na foto de perfil*/
+.profile-photo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 0 4px #0a66c2; 
+}
+/*ajuste text*/
+.profile-info h1{
+    font-size: 1.6rem;
+    color: #191919;
+    margin-bottom: 0.3rem;
+}
+/* localizaçaõ*/
+.profile-location {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.5px;
+}
+/*subtitulo*/
+.proofile-title {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+/*container projetos*/
+.profile-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+.profile-stats span{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+/*titulos*/
+.profile-bio {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+}
+.profile-bio h3 {
+    color: #0a66c2;
+    margin-bottom: 0.8rem;
+}
+
+/*GATRONOMIIA */
+.experience-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.section-title {
+    color: #0a66c2;
+    border-bottom: 2px solid #eef3f8;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #0a66c2;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+    color: #666;
+    font-size: 0.9rem;
+    background: #eef3f8;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.timeline-content {
+    background: #f9fafb;
+    padding: 1.2rem;
+    border-radius: 8px;
+    border-left: 3px solid #0a66c2;
+}
+
+.timeline-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.timeline-gallery img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s;
+}
+
+.timeline-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/*skill*/
+.skills-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: #e3f0ff;
+    color: #0a66c2;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.skill-note {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/*footer*/
+
+.site-footer {
+    background: #f3f2ef;
+    border-top: 1px solid #d0d0d0;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 1.5rem;
+}
+
+.footer-section h4 {
+    color: #0a66c2;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0a66c2;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-note {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

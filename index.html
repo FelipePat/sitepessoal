@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Felipe Pamplona</title>
-    <style>
+  
+      <link rel="stylesheet" href="css/style.css">
 
-
-    </style>
+ 
 </head>
 <body>
     <header></header>
@@ -21,20 +21,43 @@
         </ul>
     </nav>
 
-<!-- SEÇOES LINKADAS PEÇO MENU-->
-<section id="quem-sou-eu">
-    <h1>QUEM SOU EU</h1>
-    <div class="perfil"><!--foto perfil--><img src="ing/IMG_0136100kb.jpg" alt=" foto perfil"></div>
+<!-- SEÇOES LINKADAS PElO MENU--><h1>Sobre mim</h1>
+<section id="quem-sou-eu" class="profile-card">
+  <div class="profile-header"><!--foto perfil-->
+    <div class="profile-photo-container">
+      <img src="ing/IMG_0136100kb.jpg" alt="Foto de perfil" class="profile-photo">
+  </div>
+    <div class="photo-border"></div>
+  </div>
+  <div class="profile-info">
     
-    <h2>Felipe Pamplona Antunes Tremea (Pamplona)</h2>
-    <p><strong>32 anos | Ex-Gastrônomo em transição para Tecnologia</strong></p>
-    
+    <h2>Felipe Pamplona Antunes Tremea</h2>
+            <p class="profile-title">Ex-Gastrônomo em transição para Tecnologia</p>
+            <p class="profile-location">📍 Curitiba, PR</p>
+            <div class="profile-stats">
+              <span>👨‍💻 2 projetos públicos</span>
+              <span>🔗 Criando conexoções</span>
+          </div>
+      </div>
+  </div>
+
+  <div class="profile-bio">
     <h3>Tecnologia no Sangue 🖥️</h3>
     <p>Filho de analista de sistemas (1990-2019), cresci entre Windows 96 e inovações digitais. Minha trajetória tech começou cedo:</p>
     <ul>
         <li><strong>14-16 anos</strong>: Criei a comunidade "Truques do Orkut" (20k membros!) personalizando códigos Java.</li>
         <li><strong>16 anos</strong>: Montei um servidor pirata do jogo MU usando SQL e meu PC como host.</li>
     </ul>
+    <div class="skills-card">
+      <h4>🛠 Habilidades em Desenvolvimento</h4>
+      <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Git</span>
+      </div>
+  </div>
+</section>
 
     <h3>🎖️ Serviço Militar | 20º Batalhão de Infantaria Blindada</h3>
     <p>Minha primeira experiência profissional após o ensino médio:</p>
@@ -51,49 +74,75 @@
             <ul>
                 <li>CorelDraw</li>
                 <li>Photoshop</li>
+                <li>Premiere</li>
             </ul>
         </li>
     </ul>
+  </div>
+  
 </section>
 
 <!--HISTORIA GASTRONOMIA-->
-<section id="gastronomia">
-    <h2>Minha Jornada na Gastronomia 👨‍🍳</h2>
-    
+<section id="gastronomia" class="experience-section">
+  <h2 class="section-title">Minha Jornada na Gastronomia 👨‍🍳</h2>
+  <div class="timeline">
     <div class="timeline-item">
-      <h3>2016: O Início</h3>
+      <div class="timeline-header">
+        <h3>2016: O Início</h3>
+        <span class="timeline-date">2016 - 2017</span>
+            </div>
+            <div class="timeline-content">
       <ul>
-        <li>Bolsa integral na Universidade Positivo 2016</li>
+        <li>Bolsa integral na Universidade Positivo</li>
         <li>Primeiros estágios voluntários em eventos - desenvolvimento de <strong>trabalho em equipe</strong> e <strong>networking</strong></li>
       
     </ul>
-    <div class="galeria-gastro">
-        <img src="ing/Imagem do WhatsApp de 2025-04-29 à(s) 18.01.21_eee8fd63.jpg" alt=" foto revista">
-        <img src="ing/Imagem do WhatsApp de 2025-04-29 à(s) 18.01.21_0acee54e.jpg" alt=" foto pessoas">
-        
+    <div class="timeline-gallery">
+        <img src="ing/Imagem do WhatsApp de 2025-04-29 à(s) 18.01.21_eee8fd63.jpg" alt="Matéria em revista">
+        <img src="ing/Imagem do WhatsApp de 2025-04-29 à(s) 18.01.21_0acee54e.jpg" alt="Equipe gastronômica">
+        </div>
     </div>
-    </div>
-  
-    <div class="timeline-item">
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-header">
       <h3>2017-2019: Escola Espaço Gourmet</h3>
+      <span class="timeline-date">2017 - 2019</span>
+            </div>
+            <div class="timeline-content">
       <ul>
         <li>Responsável por estoque e compras</li>
         <li>Desenvolvi <strong>gestão de suprimentos</strong> e <strong>logística</strong></li>
         <li>Uso de sistemas de controle de inventário</li>
       </ul>
     </div>
+  </div>
+</div>
   
-    <div class="timeline-item">
+
+<!-- MANTRAFOODS-->
+<div class="timeline-item">
+  <div class="timeline-header">
       <h3>2019-2020: Chef no Mantra Foods</h3>
+      <span class="timeline-date">2019 - 2020</span>
+            </div>
+            <div class="timeline-content">
       <ul>
         <li>Promovido a chef em 4 meses</li>
         <li><strong>Gestão de cardápios</strong> e <strong>controle de custos</strong></li>
         <li>Liderança de equipe em ambiente de alta pressão</li>
       </ul>
     </div>
+  </div>
+</div>
   
-    <div class="timeline-item">
+
+<!--MATHILDA-->
+    <<div class="timeline-item">
+      <div class="timeline-header">
       <h3>2021-2023: Pizzaria da Mathilda</h3>
+      <span class="timeline-date">2021 - 2023</span>
+            </div>
+            <div class="timeline-content">
       <ul>
         <li>Gerenciava duas unidades simultaneamente</li>
         <li><strong>Gestão financeira</strong>: compras, notas fiscais, estoque</li>
@@ -101,32 +150,117 @@
         <li>Desenvolvi <strong>capacidade de multitarefa</strong> em ambiente caótico</li>
       </ul>
     </div>
+  </div>
+</div>
   
-    <div class="timeline-item">
-      <h3>2024: PUCPR</h3>
-      <ul>
-        <li>Técnico de laboratório temporário</li>
-        <li>Organização de materiais didáticos</li>
-        <li><strong>Suporte aos alunos</strong> - habilidade de explicar conceitos complexos</li>
-      </ul>
-    </div>
+<!--PUC-->
+<div class="timeline-item">
+  <div class="timeline-header">
+    <h3>2024: PUCPR</h3>
+    <span class="timeline-date">2024</span>
+  </div> <!-- Fecha timeline-header AQUI -->
+  
+  <div class="timeline-content"> 
+    <ul>
+      <li>Técnico de laboratório temporário</li>
+      <li>Organização de materiais didáticos</li>
+      <li><strong>Suporte aos alunos</strong> - habilidade de explicar conceitos complexos</li>
+    </ul>
+  </div>
+</div>
   
     <div class="transition">
-      <h3>Por que a transição para TI?</h3>
-      <p>Toda minha experiência em gastronomia me ensinou:</p>
-      <ul>
-        <li>🧠 <strong>Resolução de problemas</strong> sob pressão</li>
-        <li>📊 <strong>Gestão de recursos</strong> e processos</li>
-        <li>👥 <strong>Liderança</strong> e trabalho em equipe</li>
-        <li>⏱️ <strong>Gerenciamento de tempo</strong> eficiente</li>
-      </ul>
-      <p>Habilidades que agora aplico no desenvolvimento de sistemas, com a vantagem de ter horários mais humanos e melhores oportunidades.</p>
-    </div>
+      <section id="dev" class="profile-card"></section>
+      
   </section>
-  <footer class="contact-footer">
-    <h3>Contato</h3>
-    <a href="mailto:seu@email.com" class="contact-link">felipe.drill@hotmail.com</a>
-    <a href="https://github.com/seuuser" class="contact-link">github.com/FelipePat</a>
-</footer>  
+  
+  <!-- HISTORIA COMO TI-->
+  <section id="dev" class="experience-section">
+    <h2 class="section-title">Minha História como Desenvolvedor 💻</h2>
+    
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <h3>2024: Transição de Carreira</h3>
+                <span class="timeline-date">2024 - Presente</span>
+            </div>
+            <div class="timeline-content">
+                <p>No primeiro semestre de 2024, após anos na gastronomia enfrentando rotinas exaustivas e remuneração desproporcional, decidi resgatar minha paixão juvenil por tecnologia.</p>
+                
+                <ul>
+                    <li><strong>Motivação:</strong> Carga horária pesada e salários baixos na área gastronômica</li>
+                    <li><strong>Redescobri</strong> meu interesse por TI, que sempre esteve presente desde a adolescência</li>
+                    <li><strong>Pesquisa:</strong> Explorei diversas áreas da tecnologia até me identificar com ADS</li>
+                </ul>
+                
+                <h4 class="timeline-subtitle">🎯 Plano de Ação</h4>
+                <div class="timeline-highlight">
+                    <p>Ingressei no <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> no SENAC, com objetivo claro:</p>
+                    <ul>
+                        <li>Consolidar conhecimentos básicos antes da pós-graduação</li>
+                        <li>Conquistar minha primeira oportunidade na área</li>
+                        <li>Desenvolver projetos práticos para portfólio</li>
+                    </ul>
+                </div>
+
+                <h4 class="timeline-subtitle">🔄 Habilidades Transferíveis</h4>
+                <div class="skills-transfer">
+                    <p>Toda minha experiência em gastronomia me ensinou:</p>
+                    <ul>
+                        <li><strong>🧠 Resolução de problemas</strong> sob pressão</li>
+                        <li><strong>📊 Gestão de recursos</strong> e processos</li>
+                        <li><strong>👥 Liderança</strong> e trabalho em equipe</li>
+                        <li><strong>⏱️ Gerenciamento de tempo</strong> eficiente</li>
+                    </ul>
+                    <p>Competências que agora aplico no desenvolvimento de sistemas, com a vantagem de horários mais humanos e melhores oportunidades.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <!--RODA PÉ-->
+  <footer class="site-footer">
+    <div class="footer-container">
+        <!-- Seção de Contato -->
+        <div class="footer-section">
+            <h4>📬 Contato</h4>
+            <ul class="footer-links">
+                <li><a href="mailto:felipe.drill@hotmail.com">felipe.drill@hotmail.com</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- Seção de Redes Sociais -->
+        <div class="footer-section">
+            <h4>🌐 Redes Sociais</h4>
+            <div class="social-links">
+                <a href="https://github.com/FelipePat" target="_blank" class="social-icon">
+                    <img src="ing/hithub-icon.sbg.png" alt="GitHub" width="24">
+                </a>
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="social-icon">
+                    <img src="ing/linkedin-icon.svg.png" alt="LinkedIn" width="24">
+                </a>
+                <a href="https://instagram.com/felipepamplonaa" target="_blank" class="social-icon">
+                    <img src="ing/instagram-icon.svg.png" alt="Instagram" width="24">
+                </a>
+            </div>
+        </div>
+
+        <!-- Seção de Atalhos -->
+        <div class="footer-section">
+            <h4>🔗 Atalhos</h4>
+            <ul class="footer-links">
+                <li><a href="#quem-sou-eu">Sobre mim</a></li>
+                <li><a href="#gastronomia">minha História com Gastronomia</a></li>
+                <li><a href="#dev">Minha História como Desenvolvedor</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Felipe Pamplona. Todos os direitos reservados.</p>
+      <p class="footer-note"></p>
+  </div>
+</footer>
 </body>
 </html>
